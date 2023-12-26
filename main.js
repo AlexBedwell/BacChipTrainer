@@ -68,9 +68,10 @@ $("#gen-chip").click(function(){
 })
 
 $("#blue-check").click(function(){
-    let temp = $("#blue-chip-base").innerHTML;
-    console.log("base blue should be : " +baseBlueValue);
-    console.log("base blue inputed : " + temp);
+    console.log("base: "+baseBlueValue);
+    console.log("panda: "+pandaBlue);
+    console.log("tie: "+tieBlue);
+    console.log("dragon: "+dragBlue);
 
     $("#blue-base-chk").empty();
     $("#blue-panda-chk").empty();
@@ -78,28 +79,136 @@ $("#blue-check").click(function(){
     $("#blue-dragon-chk").empty();
 
 
-    if( $("#blue-chip-base").value === baseBlueValue){
+    if( $("#blue-chip-base").val() == baseBlueValue){
         $("#blue-base-chk").append("CORRECT")
     }else{
         $("#blue-base-chk").append("FALSE")
     }
 
 
-    if( $("#blue-chip-panda").value === pandaBlue){
+    if( $("#blue-chip-panda").val() == pandaBlue){
         $("#blue-panda-chk").append("CORRECT")
     }else{
         $("#blue-panda-chk").append("FALSE")
     }    
     
-    if( $("#blue-chip-tie").value === tieBlue){
+    if( $("#blue-chip-tie").val() == tieBlue){
         $("#blue-tie-chk").append("CORRECT")
     }else{
         $("#blue-tie-chk").append("FALSE")
     }    
     
-    if( $("#blue-chip-dragon").value === dragBlue){
-        $("#blue-dragon-chk").append("CORRECT")
+    if( $("#blue-chip-dragon").val() == dragBlue){
+        $("#blue-dragon-chck").append("CORRECT")
     }else{
-        $("#blue-dragon-chk").append("FALSE")
+        $("#blue-dragon-chck").append("FALSE")
+    }
+})
+
+$("#red-check").click(function(){
+    console.log("base: "+baseRedValue);
+    console.log("panda: "+pandaRed);
+    console.log("tie: "+tieRed);
+    console.log("dragon: "+dragonRed);
+
+    $("#red-base-chk").empty();
+    $("#red-panda-chk").empty();
+    $("#red-tie-chk").empty();
+    $("#red-dragon-chk").empty();
+
+
+    if( $("#red-chip-base").val() == baseRedValue){
+        $("#red-base-chk").append("CORRECT")
+    }else{
+        $("#red-base-chk").append("FALSE")
+    }
+
+
+    if( $("#red-chip-panda").val() == pandaRed){
+        $("#red-panda-chk").append("CORRECT")
+    }else{
+        $("#red-panda-chk").append("FALSE")
+    }    
+    
+    if( $("#red-chip-tie").val() == tieRed){
+        $("#red-tie-chk").append("CORRECT")
+    }else{
+        $("#red-tie-chk").append("FALSE")
+    }    
+    
+    if( $("#red-chip-dragon").val() == dragRed){
+        $("#red-dragon-chck").append("CORRECT")
+    }else{
+        $("#red-dragon-chck").append("FALSE")
+    }
+})
+
+
+$("#green-check").click(function(){
+
+    $("#green-base-chk").empty();
+    $("#green-panda-chk").empty();
+    $("#green-tie-chk").empty();
+    $("#green-dragon-chk").empty();
+
+
+    if( $("#green-chip-base").val() == baseGreenValue){
+        $("#green-base-chk").append("CORRECT")
+    }else{
+        $("#green-base-chk").append("FALSE")
+    }
+
+
+    if( $("#green-chip-panda").val() == pandaGreen){
+        $("#green-panda-chk").append("CORRECT")
+    }else{
+        $("#green-panda-chk").append("FALSE")
+    }    
+    
+    if( $("#green-chip-tie").val() == tieGreen){
+        $("#green-tie-chk").append("CORRECT")
+    }else{
+        $("#green-tie-chk").append("FALSE")
+    }    
+    
+    if( $("#green-chip-dragon").val() == dragGreen){
+        $("#green-dragon-chck").append("CORRECT")
+    }else{
+        $("#green-dragon-chck").append("FALSE")
+    }
+})
+
+
+$("#black-check").click(function(){
+
+    $("#black-base-chk").empty();
+    $("#black-panda-chk").empty();
+    $("#black-tie-chk").empty();
+    $("#black-dragon-chk").empty();
+
+
+    if( $("#black-chip-base").val() == baseBlackValue){
+        $("#black-base-chk").append("CORRECT")
+    }else{
+        $("#black-base-chk").append("FALSE")
+    }
+
+
+    if( $("#black-chip-panda").val() == pandaBlack){
+        $("#black-panda-chk").append("CORRECT")
+    }else{
+        $("#black-panda-chk").append("FALSE")
+    }    
+    
+    if( $("#black-chip-tie").val() == tieBlack){
+        $("#black-tie-chk").append("CORRECT")
+    }else{
+        $("#black-tie-chk").append("FALSE")
+    }    
+    
+    if( $("#black-chip-dragon").val() == dragBlack){
+        $("#black-dragon-chck").append("CORRECT")
+    }else{
+        $("#black-dragon-chck").append("FALSE")
     }
 })
