@@ -1,0 +1,105 @@
+window.onload = function() {
+};
+
+let baseBlueValue, baseRedValue, baseGreenValue, baseBlackValue, totalChipValue, pandaBlue, pandaRed, pandaGreen,pandaBlack, pandaTotal;
+let tieBlue, tieRed, tieGreen, tieBlack, tieTotal, dragBlue, dragRed, dragGreen, dragBlack, dragTotal;
+
+
+
+function generateChips(){
+    let tempChip = Math.floor(Math.random() * 10);
+    return tempChip;
+}
+
+$("#gen-chip").click(function(){
+
+    //Generate Chips
+    let tempBlue = generateChips();
+    console.log("There are " +tempBlue+ " Blue chips")
+    let tempRed = generateChips();
+    console.log("There are " +tempRed+ " Red chips")
+    let tempGreen = generateChips();
+    console.log("There are " +tempGreen+ " Green chips")
+    let tempBlack = generateChips();
+    console.log("There are " +tempBlack+ " Black chips")
+
+    //empty chips
+    $("#dBLUE").empty();
+    $("#dRED").empty();
+    $("#dGREEN").empty();
+    $("#dBLACK").empty();
+
+
+    //display chips
+    $("#dBLACK").prepend(tempBlack);
+    $("#dGREEN").prepend(tempGreen);
+    $("#dRED").prepend(tempRed);
+    $("#dBLUE").prepend(tempBlue);
+
+        //Calculate the chip values for each color and the total of all chips
+     baseBlueValue = tempBlue * 1;
+     baseRedValue = tempRed * 5;
+     baseGreenValue = tempGreen * 25;
+     baseBlackValue = tempBlack * 100;
+     totalChipValue = baseBlueValue + baseRedValue + baseGreenValue + baseBlackValue;
+
+
+    //generate panda value of all chip colors and total
+     pandaBlue = baseBlueValue *25;
+     pandaRed = baseRedValue *25;
+     pandaGreen = baseGreenValue *25;
+     pandaBlack = baseBlackValue *25;
+     pandaTotal = totalChipValue * 25;   
+    
+    //generate tie of all chip colors and total
+     tieBlue = baseBlueValue * 8;
+     tieRed = baseRedValue * 8;
+     tieGreen = baseGreenValue * 8;
+     tieBlack = baseBlackValue * 8;
+     tieTotal = totalChipValue * 8;
+
+        //generate dragon of all chip colors and total
+     dragBlue = baseBlueValue * 40;
+     dragRed = baseRedValue * 40;
+     dragGreen = baseGreenValue * 40;
+     dragBlack = baseBlackValue * 40;
+     dragTotal = totalChipValue * 40;
+
+})
+
+$("#blue-check").click(function(){
+    let temp = $("#blue-chip-base").innerHTML;
+    console.log("base blue should be : " +baseBlueValue);
+    console.log("base blue inputed : " + temp);
+
+    $("#blue-base-chk").empty();
+    $("#blue-panda-chk").empty();
+    $("#blue-tie-chk").empty();
+    $("#blue-dragon-chk").empty();
+
+
+    if( $("#blue-chip-base").value === baseBlueValue){
+        $("#blue-base-chk").append("CORRECT")
+    }else{
+        $("#blue-base-chk").append("FALSE")
+    }
+
+
+    if( $("#blue-chip-panda").value === pandaBlue){
+        $("#blue-panda-chk").append("CORRECT")
+    }else{
+        $("#blue-panda-chk").append("FALSE")
+    }    
+    
+    if( $("#blue-chip-tie").value === tieBlue){
+        $("#blue-tie-chk").append("CORRECT")
+    }else{
+        $("#blue-tie-chk").append("FALSE")
+    }    
+    
+    if( $("#blue-chip-dragon").value === dragBlue){
+        $("#blue-dragon-chk").append("CORRECT")
+    }else{
+        $("#blue-dragon-chk").append("FALSE")
+    }
+})
