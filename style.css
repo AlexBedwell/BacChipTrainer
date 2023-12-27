@@ -6,7 +6,7 @@ button{
     width: fit-content;
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-device-width: 960px) {
     body{
         width:100%;
         padding:0%;
