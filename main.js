@@ -12,29 +12,6 @@ function generateChips(){
 }
 
 $("#gen-chip").click(function(){
-//TODO
-//clear input sections when generating new chips 
-
-
-$("#blue-chip-base").empty();
-$("#red-chip-base").empty();
-$("#green-chip-base").empty();
-$("#black-chip-base").empty();
-
-$("#blue-chip-panda").empty();
-$("#red-chip-panda").empty();
-$("#green-chip-panda").empty();
-$("#black-chip-panda").empty();
-
-$("#blue-chip-tie").empty();
-$("#red-chip-tie").empty();
-$("#green-chip-tie").empty();
-$("#black-chip-tie").empty();
-
-$("#blue-chip-dragon").empty();
-$("#red-chip-dragon").empty();
-$("#green-chip-dragon").empty();
-$("#black-chip-dragon").empty();
 
     //Generate Chips
     let tempBlue = generateChips();
