@@ -5,11 +5,35 @@ button{
     height:fit-content;
     width: fit-content;
 }
-.header{
+
+@media only screen and (min-width: 480px) {
+
+    .sub{
+        min-width:50%;
+        background-color: lightblue;
+        height:fit-content;
+    
+    }
+    .sub button{
+        font-size:1rem;
+    }
+    .sub input{
+        font-size:1rem;
+    }
+}
+
+header{
     display:flex;
     align-content: center;
     justify-content: center;
     text-align:center;
+    font-size: 4rem;
+}
+#gen-chip{
+    font-size:2rem;
+    justify-content:center;
+    align-content:center;
+
 }
 .container{
     min-height: 100%;
@@ -21,12 +45,19 @@ button{
     flex-flow: row wrap;
     width:100%;
     align-content: center;
-
+    
 
 }
+
 .sub{
-    min-width:50%;
+    min-width:25%;
     background-color: lightblue;
     height:fit-content;
-
+    font-size: 2rem;
+}
+.sub button{
+    font-size:3rem;
+}
+.sub input{
+    font-size:2rem;
 }
