@@ -77,7 +77,7 @@ $("#blue-check").click(function(){
     $("#blue-base-chk").empty();
     $("#blue-panda-chk").empty();
     $("#blue-tie-chk").empty();
-    $("#blue-dragon-chk").empty();
+    $("#blue-dragon-chck").empty();
 
 
     if( $("#blue-chip-base").val() == baseBlueValue){
@@ -110,12 +110,12 @@ $("#red-check").click(function(){
     console.log("base: "+baseRedValue);
     console.log("panda: "+pandaRed);
     console.log("tie: "+tieRed);
-    console.log("dragon: "+dragonRed);
+    console.log("dragon: "+dragRed);
 
     $("#red-base-chk").empty();
     $("#red-panda-chk").empty();
     $("#red-tie-chk").empty();
-    $("#red-dragon-chk").empty();
+    $("#red-dragon-chck").empty();
 
 
     if( $("#red-chip-base").val() == baseRedValue){
@@ -150,7 +150,7 @@ $("#green-check").click(function(){
     $("#green-base-chk").empty();
     $("#green-panda-chk").empty();
     $("#green-tie-chk").empty();
-    $("#green-dragon-chk").empty();
+    $("#green-dragon-chck").empty();
 
 
     if( $("#green-chip-base").val() == baseGreenValue){
@@ -185,7 +185,7 @@ $("#black-check").click(function(){
     $("#black-base-chk").empty();
     $("#black-panda-chk").empty();
     $("#black-tie-chk").empty();
-    $("#black-dragon-chk").empty();
+    $("#black-dragon-chck").empty();
 
 
     if( $("#black-chip-base").val() == baseBlackValue){
