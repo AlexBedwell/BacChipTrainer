@@ -12,6 +12,10 @@ function generateChips(){
 }
 
 $("#gen-chip").click(function(){
+//TODO
+//clear input sections when generating new chips 
+
+
 
     //Generate Chips
     let tempBlue = generateChips();
