@@ -12,6 +12,7 @@ function generateChips(){
 }
 
 $("#gen-chip").click(function(){
+    $('input').val('');
 
     //Generate Chips
     let tempBlue = generateChips();
