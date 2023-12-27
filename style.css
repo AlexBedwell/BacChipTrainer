@@ -7,6 +7,11 @@ button{
 }
 
 @media only screen and (min-width: 480px) {
+    body{
+        width:100%;
+        padding:0%;
+        margin: 0%;;
+    }
     header{
         display:flex;
         align-content: center;
@@ -15,9 +20,14 @@ button{
         font-size:24px;
     }
     .sub{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         max-width:50%;
         background-color: lightblue;
         height:fit-content;
+        
     
     }
     .sub button{
@@ -25,6 +35,7 @@ button{
     }
     .sub input{
         font-size: 16px;
+        width:60%;
     }
     .sumbissions{
         background-color: blue;;
@@ -35,6 +46,14 @@ button{
         
     
     }
+    .display-Chips{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position:sticky;
+        top:0;
+        background-color: rgb(139, 146, 146);
+    }
 }
 
 header{
@@ -42,7 +61,8 @@ header{
     align-content: center;
     justify-content: center;
     text-align:center;
-    font-size: 4rem;
+    font-size: 3rem;
+    height:fit-content;
 }
 #gen-chip{
     font-size:2rem;
@@ -65,14 +85,29 @@ header{
 }
 
 .sub{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-width:25%;
     background-color: lightblue;
     height:fit-content;
     font-size: 2rem;
+    padding: 0%;
+    margin:0%;
 }
 .sub button{
+    display:flex;
     font-size:3rem;
 }
 .sub input{
     font-size:2rem;
+}
+.sub h2{
+    padding:0%;
+    margin: 0%;
+}
+.sub p{
+    padding-bottom: 0%;
+    margin-bottom:0%;
 }
