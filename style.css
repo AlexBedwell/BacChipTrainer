@@ -4,7 +4,7 @@ width:100%;
 }
 body{
     min-height: 100%;
-    background: linear-gradient(-45deg, #2e817a, #3ccde7, #44e775, #067a5f);
+    background: linear-gradient(-45deg, #e7e7e7, #c0c0c0, #636363, #4e4e4e);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
@@ -28,13 +28,16 @@ button{
     width: fit-content;
 }
 
+
+
+
 @media only screen and (max-width: 786px) {
     body{
         width:100%;
         padding:0%;
         margin: 0%;
-        
     }
+
     header{
         display:flex;
         align-content: center;
@@ -42,6 +45,13 @@ button{
         text-align:center;
         font-size:24px;
     }
+
+    #gen-chip{
+        display:flex;
+        align-content:center;
+        justify-content: center;
+    }
+
     .sub{
         display: flex;
         flex-direction: column;
@@ -67,6 +77,17 @@ button{
         
     
     }
+    .display{
+        display:grid;
+        grid-row: 1fr 1fr;
+        background-color: red;
+        margin:0%;
+        padding:0%;
+    }
+    .display p{
+        grid-row-start: 2;
+        grid-row-end: end;
+    }
     .display-Chips{
         display:flex;
         flex-direction: row;
@@ -76,7 +97,17 @@ button{
         top:0;
         background-color: rgb(240, 240, 240, .5) ;
     }
+    .display-Chips p{
+        margin:0%;
+        padding:0%;
+        text-align:center;
+    }
 }
+
+
+
+
+
 
 header{
     display:flex;
