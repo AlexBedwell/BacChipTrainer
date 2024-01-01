@@ -81,28 +81,29 @@ $("#blue-check").click(function(){
 
 
     if( $("#blue-chip-base").val() == baseBlueValue){
-        $("#blue-base-chk").append("CORRECT")
+        $("#blue-base-chk").css("color", "green");
+        $("#blue-base-chk").append("CORRECT");
     }else{
-        $("#blue-base-chk").append("FALSE")
+        $("#blue-base-chk").append("FALSE");
     }
 
 
     if( $("#blue-chip-panda").val() == pandaBlue){
-        $("#blue-panda-chk").append("CORRECT")
+        $("#blue-panda-chk").append("CORRECT");
     }else{
-        $("#blue-panda-chk").append("FALSE")
+        $("#blue-panda-chk").append("FALSE");
     }    
     
     if( $("#blue-chip-tie").val() == tieBlue){
-        $("#blue-tie-chk").append("CORRECT")
+        $("#blue-tie-chk").append("CORRECT");
     }else{
-        $("#blue-tie-chk").append("FALSE")
+        $("#blue-tie-chk").append("FALSE");
     }    
     
     if( $("#blue-chip-dragon").val() == dragBlue){
-        $("#blue-dragon-chck").append("CORRECT")
+        $("#blue-dragon-chck").append("CORRECT");
     }else{
-        $("#blue-dragon-chck").append("FALSE")
+        $("#blue-dragon-chck").append("FALSE");
     }
 })
 
